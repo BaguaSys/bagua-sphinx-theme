@@ -1,4 +1,5 @@
 # Copyright 2020-2021 Faculty Science Limited
+# Copyright 2021 Kuaishou AI Platform & DS3 Lab
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,5 +19,5 @@ import os
 
 def setup(app):
     app.add_html_theme(
-        "faculty-sphinx-theme", os.path.abspath(os.path.dirname(__file__))
+        "bagua-sphinx-theme", os.path.abspath(os.path.dirname(__file__))
     )

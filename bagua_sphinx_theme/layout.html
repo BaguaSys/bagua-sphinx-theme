@@ -6,11 +6,11 @@
 {% endif %}
 {# Default to Faculty logo #}
 {% if not logo %}
-  {% set logo = "images/faculty.svg" %}
+  {% set logo = "images/bagua.svg" %}
 {% endif %}
 
 {% set css_files = css_files + [
-    "_static/css/faculty.css",
+    "_static/css/bagua.css",
     "https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Roboto:400,700|Roboto+Mono:400,700&display=swap"
 ] %}
 
@@ -29,8 +29,8 @@
 
 {% block sidebartitle %}
 
-  {% if faculty_navbar %}
-    <a class="heading" href="{{ faculty_navbar_root }}">
+  {% if bagua_navbar %}
+    <a class="heading" href="{{ bagua_navbar_root }}">
       <div class="logo-box">
         <img class="logo" src="{{ pathto('_static/' + logo, 1) }}"/>
       </div>
@@ -65,10 +65,10 @@
 
 {% block content %}
 
-  {% if faculty_navbar %}
+  {% if bagua_navbar %}
     <nav class="platform-navbar">
       <ul>
-        {% for section in faculty_navbar_content %}
+        {% for section in bagua_navbar_content %}
           <li class="platform-navbar-section">
             {{ menu_link(section) }}
             {% if section.entries is defined %}
